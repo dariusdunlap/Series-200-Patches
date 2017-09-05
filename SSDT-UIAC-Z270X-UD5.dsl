@@ -14,10 +14,11 @@
 // Note:
 // UsbConnector=0 for USB2-only external ports (including internal headers connected to external ports)
 // UsbConnector=3 for USB2/3 combo external ports (including internal headers connected to external ports)
-// UsbConnector=255 for internal ports (such as internal bluetooth connection from WiFi card)
+// UsbConnector=255 for internal ports (such as internal bluetooth connection from WiFi card) this doesn't
+// mean internal headers connected to external ports (like case front panel ports, etc).
 //
 
-DefinitionBlock ("", "SSDT", 2, "Dracon", "SSDT-UIA", 0)
+DefinitionBlock ("", "SSDT", 2, "Dracon", "UIAC", 0)
 {
     Device(UIAC)
     {
